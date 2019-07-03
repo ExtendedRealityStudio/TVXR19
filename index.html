@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>TechVision 2019 landing page</title>
+	<script src="misc.js"></script>
+    <script src="udid.js"></script>
+    <script src="ios_version.js"></script>
+    <script src="robot_version.js"></script>
+    
+</head>
+<body style="font-family: Arial;">
+    <div align="center">
+        <div><img src="extendedRealityLogo.png" width="631" height="462"></div>
+        <h1>TechVision XR 2019 landing page</h1>
+        TVXR19 is available in 2 different flavours: an <i>iOS AR app</i> and a <i>robot assisted presentation</i>.<br>
+        If you want to get access to the <i>robot assisted</i> version, get in touch with us.
+        <br>
+        <h2>iOS Version:</h2>
+        <h3>Installer:</h3>
+        <div id="ios_downloads"></div>
+        <b>Device Requirements:</b> iOS 12.2 or newer<br>
+        <b><a id="installer_link" href="#">Click here</a></b> if you're visiting this page from the device you want to install;<br>otherwise point your deives' camera app at the QR code:<br><br>
+        <small><b>Experts only:</b> <a href="">click here</a> click here to download the .ipa file, to be used in iTunes or XCode installations.</small><br><br><br>
+        <a href="#" id="udid_toggle" onclick="toggleUdid()">Check if your device is authorized</a>
+        <div id="udid_check" style="visibility: hidden">
+            <form name="udidForm" onsubmit="return testUdid()">
+                Your device UDID: <input type="text" name="udid"> <input type="submit" value="test">
+            </form>
+        </div>
+        <h3>Setup guides:</h3>
+        <i>*** coming soon ***</i>
+        <h3>Installer:</h3>
+        <b>Device Requirements:</b> this version works on an iPhone running <b>iOS 12.2 or newer</b>.<br>
+        If you're visiting this page from your iOS device, <a href="">click here</a> to install.<br>
+        If you're visiting this page from a different device, point your iOS's device camera at this QR code:<br>
+        <br>
+        <a href="#" id="robot_version_toggle" onclick="toggleRobotVersion()">Show robot version</a>
+        <div id="robot_version" style="visibility: hidden">
+
+            <h2>Robot version:</h2>
+            <h3>Downloads:</h3>
+            The robot version is composed by 4 different softwares:<br>
+            <div id="robot_downloads"></div>
+            <h3>Documentation:</h3>
+            <i>*** coming soon ***</i>
+        </div>
+    </div>
+    <script>
+        setLink("installer_link", makeInstallerLink(manifestUrl));
+        renderResourceLinksBlock("ios_downloads", iosDownloads);
+        renderResourceLinksBlock("robot_downloads", robotDownloads);
+    </script>
+</body>
+</html>
