@@ -17,7 +17,7 @@
         <h2>iOS Version:</h2>
         <h3>Installer:</h3>
         <div id="ios_downloads"></div>
-        <b>Device Requirements:</b> iOS 12.2 or newer<br>
+        <b>Device Requirements:</b> iPhone 8Plus or newer, running iOS 12.2 or newer<br>
         <b><a id="installer_link" href="#">Click here</a></b> if you're visiting this page from the device you want to install;<br>otherwise point your deives' camera app at the QR code:<br><br>
         <div align="center"><img src="qr.png"></div>
         <small><b>Experts only:</b> <a href="">click here</a> click here to download the .ipa file, to be used in iTunes or XCode installations.</small><br><br><br>
@@ -28,7 +28,7 @@
             </form>
         </div>
         <h3>Setup guides:</h3>
-        <i>*** coming soon ***</i>
+        <div id="ios_docs"></div>
         <br>
         <a href="#" id="robot_version_toggle" onclick="toggleRobotVersion()">Show robot version</a>
         <div id="robot_version" style="visibility: hidden">
@@ -44,6 +44,7 @@
     <script>
         setLink("installer_link", makeInstallerLink(manifestUrl));
         renderResourceLinksBlock("ios_downloads", iosDownloads);
+        renderResourceLinkBlock("ios_docs", iosDocs);
         renderResourceLinksBlock("robot_downloads", robotDownloads);
     </script>
 </body>
