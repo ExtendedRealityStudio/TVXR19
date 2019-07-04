@@ -76,19 +76,22 @@ function renderResourceLinksBlock(_parentId, _rr) {
 function testUdid() {
     var udidField = document.forms["udidForm"]["udid"].value;
     var udidLower = udidField.toLowerCase();
+    console.log("testing "+udidLower);
     if (udidLower == "") {
         alert("You need to insert your UDID in the proper field");
         return false;
     } else {
+        
         var nUdids = devices["devices"].length;
+        console.log("testing against " + nUdids + " authorized devices");
         for (var i = 0; i < nUdids; i++) {
             if (udidLower == devices["devices"][i]["UDID"]) {
                 alert("This device is authorized");
                 return true;
             }
-            alert("This device is NOT authorized");
-            return false;
         }
+        alert("This device is NOT authorized");
+        return false;
     }
 }
 
