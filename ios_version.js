@@ -1,5 +1,5 @@
 var iosDownloads = [
-    makeResourceLink("","","7/1/19")
+    makeResourceLink("","","9/4/19")
 ];
 
 var iosDocs = [

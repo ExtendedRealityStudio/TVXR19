@@ -79,6 +79,8 @@ var devices = {
         { "UDID": "56f53b6e1cb2732621f84b8209ed8df831662f79" },
         { "UDID": "00008027-0006288201E3002E" },
 		{ "UDID": "6841a929b63176e9992b890ac3496ddc793fed2c" },
+		{ "UDID": "4a3ddf973e3f5b20e87832c8ccadaafbdb8c045d"},
+		{ "UDID": "c508fc9bcd6def593de43519d4788d9d6081e913"}
     ]
 };
 
